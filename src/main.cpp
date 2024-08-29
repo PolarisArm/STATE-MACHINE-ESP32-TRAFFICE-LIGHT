@@ -4,7 +4,6 @@
 int red = 2;
 int yellow = 17;
 int green  = 21;
-int blue = 22;
 
 class MainClass;
 
