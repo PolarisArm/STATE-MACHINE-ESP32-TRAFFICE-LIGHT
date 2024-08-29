@@ -5,6 +5,7 @@ int red = 2;
 int yellow = 17;
 int green  = 21;
 int blue = 22;
+
 class MainClass;
 
 class BASECLASS // THe ABSTRACT CLASS
@@ -148,7 +149,7 @@ void setup()
 {
   Serial.begin(115200);
 
-  
+  Serial.println("TRAFFIC LIGHT");
 
 }
 
