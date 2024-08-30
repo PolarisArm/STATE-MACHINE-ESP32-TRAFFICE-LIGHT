@@ -63,7 +63,7 @@ class MAINCLASS{
     public:
       MAINCLASS(int LED):_LED(LED)
       {
-        ledcAttachChannel(_LED, 10000 , 8, 0);
+        ledcAttachPin(_LED, 0);
         Serial.println("MAIN CLASS HAS BEEN CREATED");
         Serial.println("OFFSTATE");
         activeState = offState;
