@@ -148,6 +148,7 @@ MAINCLASS* mc;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
+  Serial.println("STATE MACHINE TWO");
   mc = new MAINCLASS(led);
 
 }
