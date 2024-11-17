@@ -2,7 +2,7 @@
 
 class MAINCLASS;
 
-class BASE{
+class BASE{           /*INTERFACE CLASS*/
   public:
     virtual void nextState(MAINCLASS *mc) = 0;
     virtual void display(int LED);
@@ -10,7 +10,7 @@ class BASE{
 
 };
 
-class OFFSTATE : public BASE{
+class OFFSTATE : public BASE{ /* MEMBER CLASS OF THE INTERFACE CLASS*/
   public:
     void nextState(MAINCLASS *mc) override;
     void display(int LED) override
@@ -47,7 +47,11 @@ class HIGHSTATE : public BASE{
 };
 
 
-class MAINCLASS{
+/*
+* MAIN CLASS THAT CONTROLS EVERYTHING
+*/
+
+class MAINCLASS{ 
   protected:
     BASE *activeState;
     
